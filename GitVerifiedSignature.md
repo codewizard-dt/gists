@@ -3,7 +3,6 @@
 ## Git Version
 
 Signatures using SSH is only available in Git versions 2.34 and above
-![]
 
 ### Check your Git Version
 
@@ -29,7 +28,7 @@ If you need to generate an SSH key, here is a [Github doc](https://docs.github.c
 
 ## Git Configuration
 
-Now set up Git on the command line. After completing the following config steps, you'll be able to sign any commit using the `-S` flag. Example: `git commit -S -m '<commit_message>'`. If you complete Step 4 you won't have to use the flag as the default will be to add the signature.
+Now set up Git on the command line ([reference](https://calebhearth.com/sign-git-with-ssh)). After completing the following config steps, you'll be able to sign any commit using the `-S` flag. Example: `git commit -S -m '<commit_message>'`. If you complete Step 4 you won't have to use the flag as the default will be to add the signature.
 
 | Step | Command | Effect |
 |---|---|---|

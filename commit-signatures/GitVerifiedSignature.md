@@ -34,13 +34,15 @@ Now set up Git on the command line ([reference](https://calebhearth.com/sign-git
 |---|---|---|
 | 1 | `git config --global gpg.format ssh` | Sets the default signature type |
 | 2 | `ssh-add -L` | View a list of your ssh keys |
-| 3 | `git config --global user.signingKey "ssh-ed25519 <your key id>"` | Sets the default ssh key for signatures |
+| 3 | `git config --global user.signingKey "ssh-ed25519 <your ssh key>"` | Sets the default ssh key for signatures |
 | 4 | `git config --global commit.gpgsign true` | Optional command to set automatic signatures for all commits |
+
+Here's another [link](https://blog.dbrgn.ch/2021/11/16/git-ssh-signatures/), slightly redundant with the first but is also useful.
 
 ## Verify Signature Setup
 
 You can run `git commit --allow-empty --message="Testing SSH signing"` to test the setup.
 
-If you see 'unverified' next to your commits on Github, double check to make sure that you added the SSH key with a purpose of 'signing'.
+If you see 'unverified' next to your commits on GitHub, double check to make sure that you added the SSH key to your GitHub with a purpose of 'signing'.
 
 # You're All Set for Verified Signatures!
